@@ -1,0 +1,5 @@
+defaultNamespace: ea7klk-blog
+kustomize:
+  dir: .
+helm:
+  takeOwnership: true
