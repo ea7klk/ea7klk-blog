@@ -3,23 +3,3 @@ kustomize:
   dir: .
 helm:
   takeOwnership: true
-diff:
-  comparePatches:
-  - apiVersion: apps/v1
-    kind: Deployment
-    name: ghost
-    namespace: ea7klk-blog
-    operations:
-    - op: remove
-      path: /metadata/annotations/deployment.kubernetes.io~1revision
-    - op: remove
-      path: /metadata/annotations/field.cattle.io~1publicEndpoints
-  - apiVersion: apps/v1
-    kind: Deployment
-    name: mysql
-    namespace: ea7klk-blog
-    operations:
-    - op: remove
-      path: /metadata/annotations/deployment.kubernetes.io~1revision
-    - op: remove
-      path: /metadata/annotations/field.cattle.io~1publicEndpoints
